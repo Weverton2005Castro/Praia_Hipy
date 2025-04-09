@@ -228,7 +228,7 @@ window.open(`https://wa.me/${phone}?text=${message}`, "_blank");
     function checkRestaurantOpen (){
     const data = new Date();
     const hora = data.getHours();
-    return hora >= 11 && hora < 19;
+    return hora >= 10 && hora < 19;
     // true = o restaurante esta aberto
 }
 
