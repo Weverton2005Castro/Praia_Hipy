@@ -207,7 +207,7 @@ const orderTotal = cart.reduce((sum, item) => sum + (item.price * item.quantity)
 
 // Formatando a mensagem com a lista de itens e o total final
 const message = encodeURIComponent(`${cartItems} \nTotal do Pedido: R$${orderTotal.toFixed(2)} | \nEndereço: ${addressInput.value} `);
-const phone = "#";
+const phone = "5592985353980";
 
 // Enviando a mensagem para o WhatsApp (sem duplicar o endereço)
 window.open(`https://wa.me/${phone}?text=${message}`, "_blank");
@@ -218,18 +218,9 @@ window.open(`https://wa.me/${phone}?text=${message}`, "_blank");
 })
 
 
-
-
-
-
-
-
 // mudando as cores da tarja de horario do restaurante
-    function checkRestaurantOpen (){
-    const data = new Date();
-    const hora = data.getHours();
-    return hora >= 10 && hora < 19;
-    // true = o restaurante esta aberto
+function checkRestaurantOpen (){
+    return true; // Força o restaurante a estar sempre aberto
 }
 
 const spanItem = document.getElementById("date-span")
