@@ -180,19 +180,12 @@ checkoutBtn.addEventListener("click", function(){
     /////////////////////////
 
 
-
-
-
-
-
     if(cart.length === 0) return;
     if(addressInput.value === ""){
     addressWarm.classList.remove("hidden")
     addressInput.classList.add("border-red-500") 
     return;  
     }
-
-
 
 
 // enviar o pedido para api whats
