@@ -199,7 +199,7 @@ const cartItems = cart.map((item) => {
 const orderTotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
 
 // Formatando a mensagem com a lista de itens e o total final
-const message = encodeURIComponent(`${cartItems} \nTotal do Pedido: R$${orderTotal.toFixed(2)} | \nEndereço: ${addressInput.value} `);
+const message = encodeURIComponent(`${cartItems} \nTotal do Pedido: R$${orderTotal.toFixed(2)} | \nMesa: ${addressInput.value} `);
 const phone = "5592985353980";
 
 // Enviando a mensagem para o WhatsApp (sem duplicar o endereço)
